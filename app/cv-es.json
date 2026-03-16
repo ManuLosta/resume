@@ -1,0 +1,104 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Manuel Lostaló",
+    "label": "Estudiante de Ingeniería en Sistemas & Desarrollador Web",
+    "email": "mlostalom@gmail.com",
+    "phone": "+54 9 11 3383-7591",
+    "location": {
+      "city": "Buenos Aires",
+      "countryCode": "AR"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "manuel-lostalo",
+        "url": "https://linkedin.com/in/manuel-lostalo"
+      },
+      {
+        "network": "GitHub",
+        "username": "ManuLosta",
+        "url": "https://github.com/ManuLosta"
+      }
+    ]
+  },
+  "summary": "Soy estudiante de Ingeniería en Informática con una fuerte motivación por usar la tecnología para generar bienestar en las personas y su entorno. Me apasiona resolver problemas complejos a través de soluciones simples, efectivas y con impacto real. Tengo experiencia en distintos lenguajes y entornos de programación, y también disfruto compartir conocimiento: dar clases, ayudar a otros a entender conceptos técnicos y ver cómo eso les abre nuevas posibilidades.",
+  "work": [
+    {
+      "company": "Aspen Skiing Company",
+      "position": "Asistente de Actividades Recreacionales",
+      "startDate": "2024-12",
+      "endDate": "2025-03",
+      "location": "Snowmass Village, Colorado",
+      "highlights": [
+        "Desarrollé habilidades de comunicación y servicio al cliente al interactuar diariamente con huéspedes de diferentes culturas.",
+        "Mejoré mi nivel de inglés al manejar conversaciones fluidas con clientes y coordinar actividades recreacionales en un entorno angloparlante."
+      ]
+    },
+    {
+      "company": "Colegio Labardén",
+      "position": "Entrenador Olimpiadas Matemáticas",
+      "startDate": "2023-03",
+      "endDate": "2023-11",
+      "location": "Buenos Aires, Argentina",
+      "highlights": [
+        "Desarrollé e implementé planes de clase dinámicos para estudiantes que se preparaban para la Olimpiada Matemática Argentina (OMA), fomentando el pensamiento crítico y las habilidades para resolver problemas.",
+        "Guié a estudiantes en conceptos matemáticos avanzados, ayudándolos a mejorar su desempeño en competencias."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Austral",
+      "area": "Ingeniería en Informática",
+      "startDate": "2022-03",
+      "endDate": "present",
+      "location": "Buenos Aires, Argentina",
+      "highlights": [
+        "Promedio: 9,00/10"
+      ]
+    },
+    {
+      "institution": "Colegio Labardén",
+      "area": "Ciencias Naturales",
+      "endDate": "2021-11",
+      "location": "Buenos Aires, Argentina",
+      "highlights": [
+        "Obtuve la medalla de oro de la clase por mi desempeño académico.",
+        "Participé en múltiples ocasiones en la Olimpiada Matemática Argentina (OMA), llegando a la instancia nacional.",
+        "Me gradué con un promedio de 9.20/10."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Lenguajes de programación",
+      "keywords": ["Java", "Kotlin", "Python", "SQL", "Rust", "Haskell", "JavaScript"]
+    },
+    {
+      "name": "Frameworks y herramientas",
+      "keywords": ["ReactJS", "NextJS", "Spring", "Docker", "Linux"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "B2 First Certificate (173/190)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "RhinosApp",
+      "description": "ERP para distribuidoras de alimentos en Argentina y Latinoamérica",
+      "highlights": [
+        "Junto a un equipo de estudiantes de Ingeniería en Informática y profesionales del ámbito de negocios desarrollamos un ERP especializado para distribuidoras de alimentos en Argentina.",
+        "Se utilizó NextJS para el frontend y el backend de la aplicación y Supabase como base de datos."
+      ],
+      "startDate": "2025-01"
+    }
+  ]
+}

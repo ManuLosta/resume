@@ -1,0 +1,104 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Manuel Lostaló",
+    "label": "Software Engineering Student & Web Developer",
+    "email": "mlostalom@gmail.com",
+    "phone": "+54 9 11 3383-7591",
+    "location": {
+      "city": "Buenos Aires",
+      "countryCode": "AR"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "manuel-lostalo",
+        "url": "https://linkedin.com/in/manuel-lostalo"
+      },
+      {
+        "network": "GitHub",
+        "username": "ManuLosta",
+        "url": "https://github.com/ManuLosta"
+      }
+    ]
+  },
+  "summary": "Software engineering student passionate about technology and the creation of innovative solutions. With experience in multiple programming languages and technologies, I specialize in developing unique web applications with a strong focus on design and user experience.",
+  "work": [
+    {
+      "company": "Aspen Skiing Company",
+      "position": "Recreational Activities Assistant",
+      "startDate": "2024-12",
+      "endDate": "2025-03",
+      "location": "Snowmass Village, Colorado",
+      "highlights": [
+        "Developed communication and customer service skills by interacting daily with guests from different cultures.",
+        "Improved my English proficiency while coordinating recreational activities in an English-speaking environment."
+      ]
+    },
+    {
+      "company": "Colegio Labardén",
+      "position": "Math Olympiad Coach",
+      "startDate": "2023-03",
+      "endDate": "2023-11",
+      "location": "Buenos Aires, Argentina",
+      "highlights": [
+        "Designed and implemented dynamic lesson plans to prepare students for the Argentine Mathematical Olympiad (OMA), fostering critical thinking and problem-solving skills.",
+        "Guided students in advanced mathematical concepts, helping them improve their performance in competitions."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Austral",
+      "area": "Software Engineering",
+      "startDate": "2022-03",
+      "endDate": "present",
+      "location": "Buenos Aires, Argentina",
+      "highlights": [
+        "GPA: 9.00/10"
+      ]
+    },
+    {
+      "institution": "Colegio Labardén",
+      "area": "Natural Sciences",
+      "endDate": "2021-11",
+      "location": "Buenos Aires, Argentina",
+      "highlights": [
+        "Won the class gold medal for academic excellence.",
+        "Participated multiple times in the Argentine Mathematical Olympiad (OMA), reaching the national stage.",
+        "Graduated with a GPA of 9.20/10."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["Java", "Kotlin", "Python", "SQL", "Rust", "Haskell", "JavaScript"]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "keywords": ["ReactJS", "NextJS", "Spring", "Docker", "Linux"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "B2 First Certificate (173/190)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "RhinosApp",
+      "description": "ERP for food distributors in Argentina and Latin America",
+      "highlights": [
+        "Together with a team of Software Engineering students and business professionals, we developed a specialized ERP for food distributors in Argentina.",
+        "Used NextJS for the frontend and backend, and Supabase as the database."
+      ],
+      "startDate": "2025-01"
+    }
+  ]
+}
