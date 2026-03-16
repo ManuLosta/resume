@@ -1,28 +1,35 @@
 "use client";
 
 import { useLanguage } from "../language-context";
+import { pdf } from "@react-pdf/renderer";
+import { PDFDocument } from "./PDFDocument";
+import { useRouter } from "next/navigation";
 
 export function Header() {
-  const { language, setLanguage, cv, t } = useLanguage();
+  const { language, cv, t } = useLanguage();
+  const router = useRouter();
 
-  const handleDownload = () => {
-    const cvContent = JSON.stringify(cv, null, 2);
-    const blob = new Blob([cvContent], { type: "application/json" });
+  const handleDownload = async () => {
+    const blob = await pdf(<PDFDocument cv={cv} language={language} />).toBlob();
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `resume-${language}.json`;
+    a.download = `resume-${language}.pdf`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
   };
 
+  const switchLanguage = (lang: "en" | "es") => {
+    router.push(`/${lang}`);
+  };
+
   return (
     <header className="flex justify-between items-center mb-8">
       <div className="flex gap-2">
         <button
-          onClick={() => setLanguage("en")}
+          onClick={() => switchLanguage("en")}
           className={`px-3 py-1 text-sm rounded-full transition-colors ${
             language === "en"
               ? "bg-[rgb(0,79,144)] text-white"
@@ -32,7 +39,7 @@ export function Header() {
           EN
         </button>
         <button
-          onClick={() => setLanguage("es")}
+          onClick={() => switchLanguage("es")}
           className={`px-3 py-1 text-sm rounded-full transition-colors ${
             language === "es"
               ? "bg-[rgb(0,79,144)] text-white"

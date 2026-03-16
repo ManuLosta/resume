@@ -2,15 +2,19 @@
 
 import { useLanguage } from "../language-context";
 
-function formatDate(dateStr: string): string {
-  if (dateStr === "present") return "Presente";
+const months = {
+  en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  es: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+};
+
+function formatDate(dateStr: string, language: "en" | "es"): string {
+  if (dateStr === "present") return language === "es" ? "Present" : "Present";
   const [year, month] = dateStr.split("-");
-  const months = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
-  return `${months[parseInt(month) - 1]} ${year}`;
+  return `${months[language][parseInt(month) - 1]} ${year}`;
 }
 
 export function Education() {
-  const { cv, t } = useLanguage();
+  const { cv, t, language } = useLanguage();
 
   return (
     <section className="mb-12">
@@ -21,7 +25,7 @@ export function Education() {
             <div className="flex justify-between items-start mb-1">
               <h3 className="font-medium text-black">{edu.institution}</h3>
               <span className="text-sm text-zinc-500">
-                {edu.startDate ? formatDate(edu.startDate) : ""} – {formatDate(edu.endDate)}
+                {edu.startDate ? formatDate(edu.startDate, language) : ""} – {formatDate(edu.endDate, language)}
               </span>
             </div>
             <p className="text-zinc-600">

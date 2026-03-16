@@ -13,27 +13,27 @@ function formatDate(dateStr: string, language: "en" | "es"): string {
   return `${months[language][parseInt(month) - 1]} ${year}`;
 }
 
-export function Experience() {
+export function Projects() {
   const { cv, t, language } = useLanguage();
+
+  if (!cv.projects || cv.projects.length === 0) {
+    return null;
+  }
 
   return (
     <section className="mb-12">
-      <h2 className="text-xl font-semibold mb-6 text-[rgb(0,79,144)]">{t.experience}</h2>
+      <h2 className="text-xl font-semibold mb-6 text-[rgb(0,79,144)]">{t.projects}</h2>
       <div className="space-y-8">
-        {cv.work.map((exp, index) => (
+        {cv.projects.map((project, index) => (
           <div key={index}>
             <div className="flex justify-between items-start mb-1">
-              <h3 className="font-medium text-black">{exp.company}</h3>
-              <span className="text-sm text-zinc-500">
-                {formatDate(exp.startDate, language)} – {formatDate(exp.endDate, language)}
-              </span>
+              <h3 className="font-medium text-black">{project.name}</h3>
+              <span className="text-sm text-zinc-500">{formatDate(project.startDate, language)}</span>
             </div>
-            <p className="text-zinc-600 mb-2">
-              {exp.position} — {exp.location}
-            </p>
-            {exp.highlights && exp.highlights.length > 0 && (
+            <p className="text-zinc-600 mb-2">{project.description}</p>
+            {project.highlights && project.highlights.length > 0 && (
               <ul className="space-y-1">
-                {exp.highlights.map((highlight, i) => (
+                {project.highlights.map((highlight, i) => (
                   <li key={i} className="text-sm text-zinc-500 flex">
                     <span className="mr-2">•</span>
                     {highlight}

@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, ReactNode } from "react";
 import cvEn from "./cv-en.json";
 import cvEs from "./cv-es.json";
 
@@ -38,7 +38,6 @@ const translations: Record<Language, Translations> = {
 
 interface LanguageContextType {
   language: Language;
-  setLanguage: (lang: Language) => void;
   cv: CVData;
   t: Translations;
 }
@@ -50,27 +49,19 @@ const cvData: Record<Language, CVData> = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>(() => {
-    if (typeof window !== "undefined") {
-      const savedLang = localStorage.getItem("language") as Language;
-      if (savedLang && (savedLang === "en" || savedLang === "es")) {
-        return savedLang;
-      }
-    }
-    return "es";
-  });
-
-  const handleSetLanguage = (lang: Language) => {
-    setLanguage(lang);
-    localStorage.setItem("language", lang);
-  };
+export function LanguageProvider({ 
+  children, 
+  lang 
+}: { 
+  children: ReactNode; 
+  lang: string;
+}) {
+  const language: Language = lang === "en" || lang === "es" ? lang : "es";
 
   return (
     <LanguageContext.Provider
       value={{
         language,
-        setLanguage: handleSetLanguage,
         cv: cvData[language],
         t: translations[language],
       }}
@@ -86,4 +77,11 @@ export function useLanguage() {
     throw new Error("useLanguage must be used within a LanguageProvider");
   }
   return context;
+}
+
+export function getLangFromParams(lang: string | undefined): Language {
+  if (lang === "en" || lang === "es") {
+    return lang;
+  }
+  return "es";
 }
