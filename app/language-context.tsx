@@ -15,6 +15,7 @@ interface Translations {
   skills: string;
   projects: string;
   downloadResume: string;
+  language: Language;
 }
 
 const translations: Record<Language, Translations> = {
@@ -25,6 +26,7 @@ const translations: Record<Language, Translations> = {
     skills: "Skills",
     projects: "Projects",
     downloadResume: "Download Resume",
+    language: "en",
   },
   es: {
     about: "Sobre mí",
@@ -33,6 +35,7 @@ const translations: Record<Language, Translations> = {
     skills: "Habilidades",
     projects: "Proyectos",
     downloadResume: "Descargar CV",
+    language: "es",
   },
 };
 

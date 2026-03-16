@@ -17,25 +17,25 @@ export function Experience() {
   const { cv, t, language } = useLanguage();
 
   return (
-    <section className="mb-12">
-      <h2 className="text-xl font-semibold mb-6 text-[rgb(0,79,144)]">{t.experience}</h2>
+    <section className="mb-10">
+      <h2 className="text-xl font-bold mb-6 text-zinc-800 uppercase tracking-wider">{t.experience}</h2>
       <div className="space-y-8">
         {cv.work.map((exp, index) => (
-          <div key={index}>
-            <div className="flex justify-between items-start mb-1">
-              <h3 className="font-medium text-black">{exp.company}</h3>
-              <span className="text-sm text-zinc-500">
-                {formatDate(exp.startDate, language)} – {formatDate(exp.endDate, language)}
+          <div key={index} className="relative pl-8 border-l-2 border-zinc-200">
+            <div className="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-zinc-800"></div>
+            <div className="flex justify-between items-start mb-2 flex-wrap gap-2">
+              <h3 className="font-bold text-lg text-zinc-800">{exp.company}</h3>
+              <span className="text-sm text-zinc-500 font-medium">
+                {formatDate(exp.startDate, language)} — {formatDate(exp.endDate, language)}
               </span>
             </div>
-            <p className="text-zinc-600 mb-2">
-              {exp.position} — {exp.location}
-            </p>
+            <p className="text-zinc-600 font-medium mb-2">{exp.position}</p>
+            <p className="text-sm text-zinc-500 mb-3">{exp.location}</p>
             {exp.highlights && exp.highlights.length > 0 && (
-              <ul className="space-y-1">
+              <ul className="space-y-2">
                 {exp.highlights.map((highlight, i) => (
-                  <li key={i} className="text-sm text-zinc-500 flex">
-                    <span className="mr-2">•</span>
+                  <li key={i} className="text-sm text-zinc-600 flex items-start">
+                    <span className="mr-2 text-zinc-400">•</span>
                     {highlight}
                   </li>
                 ))}

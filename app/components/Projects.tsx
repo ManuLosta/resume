@@ -21,21 +21,21 @@ export function Projects() {
   }
 
   return (
-    <section className="mb-12">
-      <h2 className="text-xl font-semibold mb-6 text-[rgb(0,79,144)]">{t.projects}</h2>
-      <div className="space-y-8">
+    <section className="mb-10">
+      <h2 className="text-xl font-bold mb-6 text-zinc-800 uppercase tracking-wider">{t.projects}</h2>
+      <div className="space-y-6">
         {cv.projects.map((project, index) => (
-          <div key={index}>
-            <div className="flex justify-between items-start mb-1">
-              <h3 className="font-medium text-black">{project.name}</h3>
-              <span className="text-sm text-zinc-500">{formatDate(project.startDate, language)}</span>
+          <div key={index} className="bg-zinc-50 rounded-lg p-5 border border-zinc-100">
+            <div className="flex justify-between items-start mb-2 flex-wrap gap-2">
+              <h3 className="font-bold text-lg text-zinc-800">{project.name}</h3>
+              <span className="text-sm text-zinc-500 font-medium">{formatDate(project.startDate, language)}</span>
             </div>
-            <p className="text-zinc-600 mb-2">{project.description}</p>
+            <p className="text-zinc-600 mb-3">{project.description}</p>
             {project.highlights && project.highlights.length > 0 && (
               <ul className="space-y-1">
                 {project.highlights.map((highlight, i) => (
-                  <li key={i} className="text-sm text-zinc-500 flex">
-                    <span className="mr-2">•</span>
+                  <li key={i} className="text-sm text-zinc-600 flex items-start">
+                    <span className="mr-2 text-zinc-400">•</span>
                     {highlight}
                   </li>
                 ))}

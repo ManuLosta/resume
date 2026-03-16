@@ -3,11 +3,10 @@
 import { useLanguage } from "../language-context";
 import { pdf } from "@react-pdf/renderer";
 import { PDFDocument } from "./PDFDocument";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export function Header() {
   const { language, cv, t } = useLanguage();
-  const router = useRouter();
 
   const handleDownload = async () => {
     const blob = await pdf(<PDFDocument cv={cv} language={language} />).toBlob();
@@ -21,37 +20,19 @@ export function Header() {
     URL.revokeObjectURL(url);
   };
 
-  const switchLanguage = (lang: "en" | "es") => {
-    router.push(`/${lang}`);
-  };
+  const otherLang = language === "en" ? "es" : "en";
 
   return (
-    <header className="flex justify-between items-center mb-8">
-      <div className="flex gap-2">
-        <button
-          onClick={() => switchLanguage("en")}
-          className={`px-3 py-1 text-sm rounded-full transition-colors ${
-            language === "en"
-              ? "bg-[rgb(0,79,144)] text-white"
-              : "text-zinc-500 hover:text-[rgb(0,79,144)]"
-          }`}
-        >
-          EN
-        </button>
-        <button
-          onClick={() => switchLanguage("es")}
-          className={`px-3 py-1 text-sm rounded-full transition-colors ${
-            language === "es"
-              ? "bg-[rgb(0,79,144)] text-white"
-              : "text-zinc-500 hover:text-[rgb(0,79,144)]"
-          }`}
-        >
-          ES
-        </button>
-      </div>
+    <div className="flex justify-end items-center gap-4 mb-8">
+      <Link
+        href={`/${otherLang}`}
+        className="flex items-center gap-2 px-4 py-2 text-sm font-medium border border-zinc-300 text-zinc-700 rounded-full hover:bg-zinc-100 transition-colors"
+      >
+        {otherLang === "en" ? "🇺🇸 EN" : "🇪🇸 ES"}
+      </Link>
       <button
         onClick={handleDownload}
-        className="flex items-center gap-2 px-4 py-2 text-sm font-medium border border-zinc-300 rounded-full hover:bg-zinc-100 transition-colors"
+        className="flex items-center gap-2 px-4 py-2 text-sm font-medium bg-white text-black rounded-full hover:bg-zinc-200 transition-colors"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +51,6 @@ export function Header() {
         </svg>
         {t.downloadResume}
       </button>
-    </header>
+    </div>
   );
 }
