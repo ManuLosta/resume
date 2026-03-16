@@ -55,6 +55,7 @@ export const translations = {
     experience: "Experience",
     skills: "Skills",
     projects: "Projects",
+    languages: "Languages",
   },
   es: {
     about: "Sobre mí",
@@ -62,5 +63,6 @@ export const translations = {
     experience: "Experiencia",
     skills: "Habilidades",
     projects: "Proyectos",
+    languages: "Idiomas",
   },
 };

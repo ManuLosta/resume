@@ -23,9 +23,10 @@ export function Projects() {
   return (
     <section className="mb-10">
       <h2 className="text-xl font-bold mb-6 text-zinc-800 uppercase tracking-wider">{t.projects}</h2>
-      <div className="space-y-6">
+      <div className="space-y-8">
         {cv.projects.map((project, index) => (
-          <div key={index} className="bg-zinc-50 rounded-lg p-5 border border-zinc-100">
+          <div key={index} className="relative pl-8 border-l-2 border-zinc-200">
+            <div className="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-zinc-800"></div>
             <div className="flex justify-between items-start mb-2 flex-wrap gap-2">
               <h3 className="font-bold text-lg text-zinc-800">{project.name}</h3>
               <span className="text-sm text-zinc-500 font-medium">{formatDate(project.startDate, language)}</span>

@@ -206,7 +206,7 @@ export function PDFDocument({ cv, language }: PDFDocumentProps) {
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>{t.projects}</Text>
             {cv.projects.map((project, i) => (
-              <View key={i} style={styles.projectCard}>
+              <View key={i} style={styles.entry}>
                 <View style={styles.entryHeader}>
                   <Text style={styles.entryTitle}>{project.name}</Text>
                   <Text style={styles.entryDate}>{formatDate(project.startDate)}</Text>
@@ -230,6 +230,15 @@ export function PDFDocument({ cv, language }: PDFDocumentProps) {
               ))}
             </View>
           ))}
+        </View>
+
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>{t.languages}</Text>
+          <View style={styles.skillsContainer}>
+            {cv.languages.map((lang, i) => (
+              <Text key={i} style={styles.skillTag}>{lang.language} — {lang.fluency}</Text>
+            ))}
+          </View>
         </View>
       </Page>
     </Document>

@@ -22,7 +22,7 @@
       }
     ]
   },
-  "summary": "Software engineering student passionate about technology and the creation of innovative solutions. With experience in multiple programming languages and technologies, I specialize in developing unique web applications with a strong focus on design and user experience.",
+  "summary": "I am a Computer Science Engineering student with a strong motivation to use technology to generate well-being for people and their surroundings. I am passionate about solving complex problems through simple, effective solutions with real impact. I have experience in different programming languages and environments, and I also enjoy sharing knowledge: teaching, helping others understand technical concepts, and seeing how that opens up new possibilities for them.",
   "work": [
     {
       "company": "Aspen Skiing Company",
@@ -32,7 +32,7 @@
       "location": "Snowmass Village, Colorado",
       "highlights": [
         "Developed communication and customer service skills by interacting daily with guests from different cultures.",
-        "Improved my English proficiency while coordinating recreational activities in an English-speaking environment."
+        "Improved my English proficiency by handling fluent conversations with clients and coordinating recreational activities in an English-speaking environment."
       ]
     },
     {
@@ -42,7 +42,7 @@
       "endDate": "2023-11",
       "location": "Buenos Aires, Argentina",
       "highlights": [
-        "Designed and implemented dynamic lesson plans to prepare students for the Argentine Mathematical Olympiad (OMA), fostering critical thinking and problem-solving skills.",
+        "Developed and implemented dynamic lesson plans for students preparing for the Argentine Mathematical Olympiad (OMA), fostering critical thinking and problem-solving skills.",
         "Guided students in advanced mathematical concepts, helping them improve their performance in competitions."
       ]
     }
@@ -50,7 +50,7 @@
   "education": [
     {
       "institution": "Universidad Austral",
-      "area": "Software Engineering",
+      "area": "Computer Science Engineering",
       "startDate": "2022-03",
       "endDate": "present",
       "location": "Buenos Aires, Argentina",
@@ -95,8 +95,8 @@
       "name": "RhinosApp",
       "description": "ERP for food distributors in Argentina and Latin America",
       "highlights": [
-        "Together with a team of Software Engineering students and business professionals, we developed a specialized ERP for food distributors in Argentina.",
-        "Used NextJS for the frontend and backend, and Supabase as the database."
+        "Together with a team of Computer Science Engineering students and business professionals, we developed a specialized ERP for food distributors in Argentina.",
+        "Used NextJS for the frontend and backend of the application, and Supabase as the database."
       ],
       "startDate": "2025-01"
     }
