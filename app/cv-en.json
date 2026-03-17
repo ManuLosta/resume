@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
   "basics": {
     "name": "Manuel Lostaló",
-    "label": "Software Engineering Student & Web Developer",
+    "label": "Computer Engineering Student",
     "email": "mlostalom@gmail.com",
     "phone": "+54 9 11 3383-7591",
     "location": {
@@ -22,17 +22,17 @@
       }
     ]
   },
-  "summary": "I am a Computer Science Engineering student with a strong motivation to use technology to generate well-being for people and their surroundings. I am passionate about solving complex problems through simple, effective solutions with real impact. I have experience in different programming languages and environments, and I also enjoy sharing knowledge: teaching, helping others understand technical concepts, and seeing how that opens up new possibilities for them.",
+  "summary": "Computer Engineering student at Universidad Austral with a strong foundation in software development, web technologies, and artificial intelligence. Passionate about building innovative solutions and applying AI techniques to real-world problems. Seeking a software development internship to apply technical skills and learn from experienced professionals.",
   "work": [
     {
       "company": "Aspen Skiing Company",
-      "position": "Recreational Activities Assistant",
+      "position": "Recreation Services Attendant",
       "startDate": "2024-12",
       "endDate": "2025-03",
       "location": "Snowmass Village, Colorado",
       "highlights": [
         "Developed communication and customer service skills by interacting daily with guests from different cultures.",
-        "Improved my English proficiency by handling fluent conversations with clients and coordinating recreational activities in an English-speaking environment."
+        "Improved English proficiency by handling fluent conversations with clients in an English-speaking professional environment."
       ]
     },
     {
@@ -50,12 +50,14 @@
   "education": [
     {
       "institution": "Universidad Austral",
-      "area": "Computer Science Engineering",
+      "area": "Computer Engineering",
+      "studyType": "Computer Engineering",
       "startDate": "2022-03",
       "endDate": "present",
       "location": "Buenos Aires, Argentina",
       "highlights": [
-        "GPA: 9.00/10"
+        "Strong inclination toward Artificial Intelligence, actively pursuing specialized AI courses",
+        "GPA: 9.04/10"
       ]
     },
     {
@@ -73,11 +75,19 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Java", "Kotlin", "Python", "SQL", "Rust", "Haskell", "JavaScript"]
+      "keywords": ["Java", "Kotlin", "Python", "SQL", "Rust", "Haskell", "JavaScript", "TypeScript"]
     },
     {
-      "name": "Frameworks & Tools",
-      "keywords": ["ReactJS", "NextJS", "Spring", "Docker", "Linux"]
+      "name": "Web Development",
+      "keywords": ["ReactJS", "NextJS", "HTML/CSS", "REST APIs"]
+    },
+    {
+      "name": "AI & Data Science",
+      "keywords": ["Machine Learning", "Generative AI", "Computer Vision", "TensorFlow/PyTorch"]
+    },
+    {
+      "name": "Tools & Platforms",
+      "keywords": ["Docker", "Linux", "Git", "Supabase", "PostgreSQL"]
     }
   ],
   "languages": [
@@ -95,10 +105,11 @@
       "name": "RhinosApp",
       "description": "ERP for food distributors in Argentina and Latin America",
       "highlights": [
-        "Together with a team of Computer Science Engineering students and business professionals, we developed a specialized ERP for food distributors in Argentina.",
-        "Used NextJS for the frontend and backend of the application, and Supabase as the database."
+        "Collaborated with a team of engineering students and business professionals to develop a specialized ERP system for food distributors.",
+        "Built full-stack application using NextJS for frontend and backend, with Supabase as the database.",
+        "Applied software engineering best practices including version control and agile collaboration."
       ],
-      "startDate": "2025-01"
+      "startDate": "2025-12"
     }
   ]
 }

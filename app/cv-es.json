@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
   "basics": {
     "name": "Manuel Lostaló",
-    "label": "Estudiante de Ingeniería en Sistemas & Desarrollador Web",
+    "label": "Estudiante de Ingeniería en Informática",
     "email": "mlostalom@gmail.com",
     "phone": "+54 9 11 3383-7591",
     "location": {
@@ -22,7 +22,7 @@
       }
     ]
   },
-  "summary": "Soy estudiante de Ingeniería en Informática con una fuerte motivación por usar la tecnología para generar bienestar en las personas y su entorno. Me apasiona resolver problemas complejos a través de soluciones simples, efectivas y con impacto real. Tengo experiencia en distintos lenguajes y entornos de programación, y también disfruto compartir conocimiento: dar clases, ayudar a otros a entender conceptos técnicos y ver cómo eso les abre nuevas posibilidades.",
+  "summary": "Estudiante de Ingeniería en Informática en Universidad Austral con una base sólida en desarrollo de software, tecnologías web e inteligencia artificial. Apasionado por construir soluciones innovadoras y aplicar técnicas de IA a problemas del mundo real. Busco una pasantía en desarrollo de software para aplicar mis habilidades técnicas y aprender de profesionales experimentados.",
   "work": [
     {
       "company": "Aspen Skiing Company",
@@ -32,7 +32,7 @@
       "location": "Snowmass Village, Colorado",
       "highlights": [
         "Desarrollé habilidades de comunicación y servicio al cliente al interactuar diariamente con huéspedes de diferentes culturas.",
-        "Mejoré mi nivel de inglés al manejar conversaciones fluidas con clientes y coordinar actividades recreacionales en un entorno angloparlante."
+        "Mejoré mi nivel de inglés al manejar conversaciones fluidas con clientes en un entorno profesional angloparlante."
       ]
     },
     {
@@ -51,11 +51,21 @@
     {
       "institution": "Universidad Austral",
       "area": "Ingeniería en Informática",
+      "studyType": "Ingeniería en Informática",
       "startDate": "2022-03",
       "endDate": "present",
       "location": "Buenos Aires, Argentina",
+      "courses": [
+        "IA Generativa - Arquitecturas de aprendizaje profundo para generación de contenido (LLMs, modelos de difusión)",
+        "Visión Artificial - Procesamiento de imágenes, detección de objetos y arquitecturas de redes neuronales",
+        "Fundamentos de IA - Algoritmos de aprendizaje automático, redes neuronales y ética en IA",
+        "Ingeniería de Software",
+        "Estructuras de Datos y Algoritmos",
+        "Sistemas de Bases de Datos"
+      ],
       "highlights": [
-        "Promedio: 9,00/10"
+        "Fuerte inclinación hacia la Inteligencia Artificial, cursando activamente cursos especializados de IA",
+        "Promedio: 9,04/10"
       ]
     },
     {
@@ -66,18 +76,26 @@
       "highlights": [
         "Obtuve la medalla de oro de la clase por mi desempeño académico.",
         "Participé en múltiples ocasiones en la Olimpiada Matemática Argentina (OMA), llegando a la instancia nacional.",
-        "Me gradué con un promedio de 9.20/10."
+        "Me gradué con un promedio de 9,20/10."
       ]
     }
   ],
   "skills": [
     {
       "name": "Lenguajes de programación",
-      "keywords": ["Java", "Kotlin", "Python", "SQL", "Rust", "Haskell", "JavaScript"]
+      "keywords": ["Java", "Kotlin", "Python", "SQL", "Rust", "Haskell", "JavaScript", "TypeScript"]
     },
     {
-      "name": "Frameworks y herramientas",
-      "keywords": ["ReactJS", "NextJS", "Spring", "Docker", "Linux"]
+      "name": "Desarrollo Web",
+      "keywords": ["ReactJS", "NextJS", "HTML/CSS", "REST APIs"]
+    },
+    {
+      "name": "IA y Ciencia de Datos",
+      "keywords": ["Machine Learning", "IA Generativa", "Visión Artificial", "TensorFlow/PyTorch"]
+    },
+    {
+      "name": "Herramientas y Plataformas",
+      "keywords": ["Docker", "Linux", "Git", "Supabase", "PostgreSQL"]
     }
   ],
   "languages": [
@@ -95,10 +113,11 @@
       "name": "RhinosApp",
       "description": "ERP para distribuidoras de alimentos en Argentina y Latinoamérica",
       "highlights": [
-        "Junto a un equipo de estudiantes de Ingeniería en Informática y profesionales del ámbito de negocios desarrollamos un ERP especializado para distribuidoras de alimentos en Argentina.",
-        "Se utilizó NextJS para el frontend y el backend de la aplicación y Supabase como base de datos."
+        "Colaboré con un equipo de estudiantes de ingeniería y profesionales del ámbito de negocios para desarrollar un sistema ERP especializado para distribuidoras de alimentos.",
+        "Construí una aplicación full-stack utilizando NextJS para el frontend y backend, con Supabase como base de datos.",
+        "Apliqué mejores prácticas de ingeniería de software incluyendo control de versiones y colaboración ágil."
       ],
-      "startDate": "2025-01"
+      "startDate": "2025-12"
     }
   ]
 }
